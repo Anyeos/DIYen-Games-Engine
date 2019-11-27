@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="Diyen DEV"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="2">
+      <Item1 Name="Default" Default="True"/>
+      <Item2 Name="DEBUG">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="diyentest"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="android;SDL2"/>
+            <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <TargetProcessor Value="pentium4"/>
+            <TargetCPU Value="i386"/>
+          </CodeGeneration>
+        </CompilerOptions>
+      </Item2>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <Units Count="13">
+      <Unit0>
+        <Filename Value="program.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="diyendev"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="nave.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="test.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="diyen/diyen_input.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="diyen/diyen_sound.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="diyen/diyen_graphic.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="diyen/diyen_map.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="diyen/diyen_text.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="diyen/diyen_tilemaps.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="diyen/diyen_fx.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="diyen/diyen_particles.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="diyen/diyen_draw.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="diyen/diyen_sound_fx.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit12>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="diyendev"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir);diyen"/>
+      <OtherUnitFiles Value="diyen;SDL2"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+      </Checks>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-dDIYEN_DEBUG_NO
+-dTEXT_USE_Z_NO
+-dDIYEN_PAUSE
+-dZLAYER_NO
+-dZLAYER_RUNTIME_NO
+-dANDROID_NO"/>
+      <OtherDefines Count="10">
+        <Define0 Value="DIYEN_DEBUG"/>
+        <Define1 Value="HIT_COL"/>
+        <Define2 Value="AUTO_PTYPE"/>
+        <Define3 Value="FX_ENGINE"/>
+        <Define4 Value="USE_CLEAR"/>
+        <Define5 Value="ENABLE_TILEMAPS"/>
+        <Define6 Value="DEBUG_TEXT"/>
+        <Define7 Value="SCROLL_SOFTWARE"/>
+        <Define8 Value="DIYEN_DEBUG_COLS"/>
+        <Define9 Value="TEXT_USE_Z"/>
+      </OtherDefines>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
